@@ -1,5 +1,5 @@
 $# LS-DYNA Keyword file created by LS-PrePost(R) V4.3.20 - 09Jan2018
-$# Created on Apr-22-2024 (11:09:22)
+$# Created on Jul-03-2024 (13:44:45)
 *KEYWORD
 *TITLE
 $#                                                                         title
@@ -75,7 +75,7 @@ noeudsol
 $#     sid       da1       da2       da3       da4    solver      
          3       0.0       0.0       0.0       0.0MECH
 $#    nid1      nid2      nid3      nid4      nid5      nid6      nid7      nid8
-   6455277   6455313         0         0         0         0         0         0
+   6455295         0         0         0         0         0         0         0
 *BOUNDARY_SPC_SET_ID
 $#      id                                                               heading
          0ressort
@@ -2278,7 +2278,7 @@ $#                a1                  o1
             99.89884            127565.4
             99.99988            127727.7
 *SET_NODE_LIST_TITLE
-poteau
+poteau.force
 $#     sid       da1       da2       da3       da4    solver      
          2       0.0       0.0       0.0       0.0MECH
 $#    nid1      nid2      nid3      nid4      nid5      nid6      nid7      nid8
