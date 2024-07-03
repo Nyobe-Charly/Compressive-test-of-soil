@@ -1,5 +1,5 @@
 $# LS-DYNA Keyword file created by LS-PrePost(R) V4.3.20 - 09Jan2018
-$# Created on Jun-24-2024 (09:08:38)
+$# Created on Jul-03-2024 (14:17:58)
 *KEYWORD
 *TITLE
 $#                                                                         title
@@ -5222,7 +5222,7 @@ orientation z
 $#     vid       iop        xt        yt        zt      nid1      nid2    
          3         0       0.0       0.0       1.0         0         0
 *SET_NODE_LIST_TITLE
-poteau
+poteau.force
 $#     sid       da1       da2       da3       da4    solver      
          2       0.0       0.0       0.0       0.0MECH
 $#    nid1      nid2      nid3      nid4      nid5      nid6      nid7      nid8
