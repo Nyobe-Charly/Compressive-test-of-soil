@@ -1,5 +1,5 @@
 $# LS-DYNA Keyword file created by LS-PrePost(R) V4.3.20 - 09Jan2018
-$# Created on Jul-03-2024 (13:44:45)
+$# Created on Jul-07-2024 (19:43:19)
 *KEYWORD
 *TITLE
 $#                                                                         title
@@ -67,22 +67,22 @@ $#     id1       id2       id3       id4       id5       id6       id7       id8
    6459234   6456893   6455773         0         0         0         0         0
 *BOUNDARY_SPC_SET_ID
 $#      id                                                               heading
-         0noeudsol
+         0node-post
 $#    nsid       cid      dofx      dofy      dofz     dofrx     dofry     dofrz
          3         0         0         1         1         1         1         1
 *SET_NODE_LIST_TITLE
-noeudsol
+Node-post
 $#     sid       da1       da2       da3       da4    solver      
          3       0.0       0.0       0.0       0.0MECH
 $#    nid1      nid2      nid3      nid4      nid5      nid6      nid7      nid8
    6455295         0         0         0         0         0         0         0
 *BOUNDARY_SPC_SET_ID
 $#      id                                                               heading
-         0ressort
+         0Discrete
 $#    nsid       cid      dofx      dofy      dofz     dofrx     dofry     dofrz
          4         0         1         1         1         1         1         1
 *SET_NODE_LIST_TITLE
-ressort
+Discrete
 $#     sid       da1       da2       da3       da4    solver      
          4       0.0       0.0       0.0       0.0MECH
 $#    nid1      nid2      nid3      nid4      nid5      nid6      nid7      nid8
@@ -160,7 +160,7 @@ $#    nid1      nid2      nid3      nid4      nid5      nid6      nid7      nid8
    6461578   6461580   6461582   6461584   6461586   6461588         0         0
 *CONTACT_AUTOMATIC_SURFACE_TO_SURFACE_ID
 $#     cid                                                                 title
-         4impacteur-poteau
+         4impactor-post
 $#    ssid      msid     sstyp     mstyp    sboxid    mboxid       spr       mpr
          1         1         2         3         0         0         0         0
 $#      fs        fd        dc        vc       vdc    penchk        bt        dt
@@ -177,7 +177,7 @@ $#    pid1      pid2      pid3      pid4      pid5      pid6      pid7      pid8
          4         5         0         0         0         0         0         0
 *PART
 $#                                                                         title
-poteau
+Post
 $#     pid     secid       mid     eosid      hgid      grav    adpopt      tmid
          1         1         1         0         1         0         0         0
 *SECTION_SOLID_TITLE
@@ -185,7 +185,7 @@ poteau
 $#   secid    elform       aet   
          1         1         0
 *MAT_WOOD_PINE_TITLE
-poteau
+Post
 $#     mid        ro     nplot     iters     irate      hard     ifail      ivol
          16.7200E-10         1         1         0       0.0         0         0
 $#    mois      temp    qual_t    qual_c     units     iqual     
@@ -202,27 +202,27 @@ $#    hgid       ihq        qm       ibq        q1        q2    qb/vdc        qw
          1         4      0.03         0       1.5      0.06       0.0       0.0
 *PART
 $#                                                                         title
-ressort1
+Discrete1
 $#     pid     secid       mid     eosid      hgid      grav    adpopt      tmid
          2         6        10         0         0         0         0         0
 *SECTION_DISCRETE_TITLE
-ressort
+Discrete
 $#   secid       dro        kd        v0        cl        fd  
          6         0       0.0       0.0       0.0       0.0
 $#     cdl       tdl   
        0.0       0.0
 *MAT_SPRING_NONLINEAR_ELASTIC_TITLE
-ressort
+Discrete
 $#     mid       lcd       lcr   
         10         1         0
 *PART
 $#                                                                         title
-ressort2
+Discrete2
 $#     pid     secid       mid     eosid      hgid      grav    adpopt      tmid
          3         6        10         0         0         0         0         0
 *PART
 $#                                                                         title
-impacteur
+impactor
 $#     pid     secid       mid     eosid      hgid      grav    adpopt      tmid
          4         4         8         0         1         0         0         0
 *SECTION_SOLID_TITLE
@@ -235,7 +235,7 @@ $#     mid        ro         e        pr        da        db  not used
          81.99300E-8  210000.0       0.3       0.0       0.0         0
 *PART
 $#                                                                         title
-caoutchouc
+Rubber
 $#     pid     secid       mid     eosid      hgid      grav    adpopt      tmid
          5         5         9         0         1         0         0         0
 *SECTION_SOLID_TITLE
@@ -274,9 +274,9 @@ $#nsid/pid      styp     omega        vx        vy        vz     ivatn      icid
 $#      xc        yc        zc        nx        ny        nz     phase    irigid
        0.0       0.0       0.0       0.0       0.0       0.0         0         0
 *DEFINE_CURVE_TITLE
-courbeH
+CurveH
 $#    lcid      sidr       sfa       sfo      offa      offo    dattyp     lcint
-         1         0       1.0    0.0028       0.0       0.0         0         0
+         1         0       1.0   0.00325       0.0       0.0         0         0
 $#                a1                  o1  
            -99.99988           -127727.7
            -99.89884           -127565.4
@@ -2278,7 +2278,7 @@ $#                a1                  o1
             99.89884            127565.4
             99.99988            127727.7
 *SET_NODE_LIST_TITLE
-poteau.force
+Post-force
 $#     sid       da1       da2       da3       da4    solver      
          2       0.0       0.0       0.0       0.0MECH
 $#    nid1      nid2      nid3      nid4      nid5      nid6      nid7      nid8

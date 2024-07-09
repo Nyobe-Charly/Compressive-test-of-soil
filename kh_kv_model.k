@@ -1,5 +1,5 @@
 $# LS-DYNA Keyword file created by LS-PrePost(R) V4.3.20 - 09Jan2018
-$# Created on Jul-03-2024 (14:17:58)
+$# Created on Jul-07-2024 (19:45:49)
 *KEYWORD
 *TITLE
 $#                                                                         title
@@ -76,7 +76,7 @@ $#     id1       id2       id3       id4       id5       id6       id7       id8
    6459234   6456893         0         0         0         0         0         0
 *CONTACT_AUTOMATIC_SURFACE_TO_SURFACE_ID
 $#     cid                                                                 title
-         4impacteur-poteau
+         4impactor - post
 $#    ssid      msid     sstyp     mstyp    sboxid    mboxid       spr       mpr
          1         1         2         3         0         0         0         0
 $#      fs        fd        dc        vc       vdc    penchk        bt        dt
@@ -93,15 +93,15 @@ $#    pid1      pid2      pid3      pid4      pid5      pid6      pid7      pid8
          2         3         0         0         0         0         0         0
 *PART
 $#                                                                         title
-poteau
+post
 $#     pid     secid       mid     eosid      hgid      grav    adpopt      tmid
          1         1         1         0         1         0         0         0
 *SECTION_SOLID_TITLE
-poteau
+Post
 $#   secid    elform       aet   
          1         1         0
 *MAT_WOOD_PINE_TITLE
-poteau
+Post
 $#     mid        ro     nplot     iters     irate      hard     ifail      ivol
          16.7200E-10         1         1         0       0.0         0         0
 $#    mois      temp    qual_t    qual_c     units     iqual     
@@ -118,11 +118,11 @@ $#    hgid       ihq        qm       ibq        q1        q2    qb/vdc        qw
          1         4      0.03         0       1.5      0.06       0.0       0.0
 *PART
 $#                                                                         title
-impacteur
+impactor
 $#     pid     secid       mid     eosid      hgid      grav    adpopt      tmid
          2         4         8         0         1         0         0         0
 *SECTION_SOLID_TITLE
-impacteur
+impactor
 $#   secid    elform       aet   
          4         1         0
 *MAT_ELASTIC_TITLE
@@ -131,15 +131,15 @@ $#     mid        ro         e        pr        da        db  not used
          81.99300E-8  210000.0       0.3       0.0       0.0         0
 *PART
 $#                                                                         title
-caoutchouc
+Rubber
 $#     pid     secid       mid     eosid      hgid      grav    adpopt      tmid
          3         5         9         0         1         0         0         0
 *SECTION_SOLID_TITLE
-caoutchouc
+Rubber
 $#   secid    elform       aet   
          5         1         0
 *MAT_BLATZ-KO_RUBBER_TITLE
-caoutchouc
+Rubber
 $#     mid        ro         g       ref   
          99.3000E-10       0.6       0.0
 *PART
@@ -176,11 +176,11 @@ ressortz
 $#     mid       lcd       lcr   
         12         3         0
 *SECTION_SOLID_TITLE
-sol
+Soil
 $#   secid    elform       aet   
          2         1         0
 *MAT_RIGID_TITLE
-impacteur
+impactor
 $#     mid        ro         e        pr         n    couple         m     alias
          49.27200E-9  210000.0       0.3       0.0       0.0       0.0          
 $#     cmo      con1      con2    
@@ -197,9 +197,9 @@ $#nsid/pid      styp     omega        vx        vy        vz     ivatn      icid
 $#      xc        yc        zc        nx        ny        nz     phase    irigid
        0.0       0.0       0.0       0.0       0.0       0.0         0         0
 *DEFINE_CURVE_TITLE
-ressortx
+Discretex
 $#    lcid      sidr       sfa       sfo      offa      offo    dattyp     lcint
-         1         0       1.0    0.0027       0.0       0.0         0         0
+         1         0       1.0   0.00325       0.0       0.0         0         0
 $#                a1                  o1  
            -199.9839           -211371.8
            -199.7852           -211210.9
@@ -2201,9 +2201,9 @@ $#                a1                  o1
             199.7852            211210.9
             199.9839            211371.8
 *DEFINE_CURVE_TITLE
-ressorty
+Discretey
 $#    lcid      sidr       sfa       sfo      offa      offo    dattyp     lcint
-         2         0       1.0    0.0027       0.0       0.0         0         0
+         2         0       1.0   0.00325       0.0       0.0         0         0
 $#                a1                  o1  
            -199.9839           -211371.8
            -199.7852           -211210.9
@@ -4205,9 +4205,9 @@ $#                a1                  o1
             199.7852            211210.9
             199.9839            211371.8
 *DEFINE_CURVE_TITLE
-ressortz
+Discretez
 $#    lcid      sidr       sfa       sfo      offa      offo    dattyp     lcint
-         3         0       1.0    0.0027       0.0       0.0         0         0
+         3         0       1.0   0.00325       0.0       0.0         0         0
 $#                a1                  o1  
                  0.0                 0.0
             0.200134             307.801
@@ -5222,7 +5222,7 @@ orientation z
 $#     vid       iop        xt        yt        zt      nid1      nid2    
          3         0       0.0       0.0       1.0         0         0
 *SET_NODE_LIST_TITLE
-poteau.force
+Post-force
 $#     sid       da1       da2       da3       da4    solver      
          2       0.0       0.0       0.0       0.0MECH
 $#    nid1      nid2      nid3      nid4      nid5      nid6      nid7      nid8

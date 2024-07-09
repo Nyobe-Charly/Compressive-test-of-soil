@@ -1,4 +1,5 @@
 # Post-Soil Interaction Modeling for roadside safety barriers 
+The four models are built on Ls - prepost (R) V4.3.20 from Ls - dyna. Calculations are performed on a calculation server.
 
 ## Compression_test.k
 The test consists in compressing the soil contained in the tank by a rigid solid. All points of the solid in contact with the ground move by 200 mm. The resultant of the nodal forces exerted by the solid on the ground is extracted in RCFORC contained in the BINOUT file. The resultant force-displacement curve is plotted.
