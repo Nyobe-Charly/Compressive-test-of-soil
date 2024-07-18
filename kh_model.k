@@ -1,5 +1,5 @@
 $# LS-DYNA Keyword file created by LS-PrePost(R) V4.3.20 - 09Jan2018
-$# Created on Jul-07-2024 (19:43:19)
+$# Created on Jul-18-2024 (09:33:12)
 *KEYWORD
 *TITLE
 $#                                                                         title
@@ -202,7 +202,7 @@ $#    hgid       ihq        qm       ibq        q1        q2    qb/vdc        qw
          1         4      0.03         0       1.5      0.06       0.0       0.0
 *PART
 $#                                                                         title
-Discrete1
+spring 1
 $#     pid     secid       mid     eosid      hgid      grav    adpopt      tmid
          2         6        10         0         0         0         0         0
 *SECTION_DISCRETE_TITLE
@@ -217,7 +217,7 @@ $#     mid       lcd       lcr
         10         1         0
 *PART
 $#                                                                         title
-Discrete2
+spring 2
 $#     pid     secid       mid     eosid      hgid      grav    adpopt      tmid
          3         6        10         0         0         0         0         0
 *PART

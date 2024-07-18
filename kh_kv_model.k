@@ -1,5 +1,5 @@
 $# LS-DYNA Keyword file created by LS-PrePost(R) V4.3.20 - 09Jan2018
-$# Created on Jul-07-2024 (19:45:49)
+$# Created on Jul-18-2024 (09:32:15)
 *KEYWORD
 *TITLE
 $#                                                                         title
@@ -144,7 +144,7 @@ $#     mid        ro         g       ref
          99.3000E-10       0.6       0.0
 *PART
 $#                                                                         title
-ressort x
+spring x
 $#     pid     secid       mid     eosid      hgid      grav    adpopt      tmid
          4         6        10         0         0         0         0         0
 *SECTION_DISCRETE_TITLE
@@ -159,7 +159,7 @@ $#     mid       lcd       lcr
         10         1         0
 *PART
 $#                                                                         title
-ressort y
+spring y
 $#     pid     secid       mid     eosid      hgid      grav    adpopt      tmid
          5         6        11         0         0         0         0         0
 *MAT_SPRING_NONLINEAR_ELASTIC_TITLE
@@ -168,7 +168,7 @@ $#     mid       lcd       lcr
         11         2         0
 *PART
 $#                                                                         title
-ressort z
+spring z
 $#     pid     secid       mid     eosid      hgid      grav    adpopt      tmid
          6         6        12         0         0         0         0         0
 *MAT_SPRING_NONLINEAR_ELASTIC_TITLE
